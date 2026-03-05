@@ -1,0 +1,26 @@
+<h2>Liste des ateliers (Nadine)</h2>
+<button routerLink="/atelier/add">Nouvel atelier</button>
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Email formateur</th>
+      <th>Participants</th>
+      <th>Statut</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of ateliers">
+      <td>{{ a.nom }}</td>
+      <td>{{ a.emailFormateur }}</td>
+      <td>{{ a.nbrParticipant }}</td>
+      <td>{{ a.statut ? 'Actif' : 'Inactif' }}</td>
+      <td>
+        <button class="details" (click)="goDetails(a.id)">Détails</button>
+        <button class="update" (click)="goUpdate(a.id)">Modifier</button>
+        <button class="delete" (click)="deleteAtelier(a.id)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

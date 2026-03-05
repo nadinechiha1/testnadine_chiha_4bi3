@@ -1,4 +1,55 @@
-.nav-link.active{
-    color: black;
-    font-weight: bold;
+/* Header Component Styles */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header a {
+  color: white;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+}
+
+header a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+header a:hover::after {
+  width: 80%;
+}
+
+header a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: white;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }

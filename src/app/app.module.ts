@@ -15,6 +15,10 @@ import { AddSuggestionComponent } from './core/add-suggestion/add-suggestion.com
 import { SuggestionService } from './services/suggestion.service';
 import { provideHttpClient } from '@angular/common/http';
 import { UpdateSuggestionComponent } from './core/update-suggestion/update-suggestion.component';
+import { AddAtelierNadineComponent } from './core/add-atelier-nadine/add-atelier-nadine.component';
+import { ListAtelierNadineComponent } from './core/list-atelier-nadine/list-atelier-nadine.component';
+import { AtelierDetailsNadineComponent } from './core/atelier-details-nadine/atelier-details-nadine.component';
+import { UpdateAtelierNadineComponent } from './core/update-atelier-nadine/update-atelier-nadine.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { UpdateSuggestionComponent } from './core/update-suggestion/update-sugge
     AddSuggestionComponent,
     SuggestionDetailsComponent,
     UpdateSuggestionComponent,
+    AddAtelierNadineComponent,
+    ListAtelierNadineComponent,
+    AtelierDetailsNadineComponent,
+    UpdateAtelierNadineComponent,
   ],
   imports: [
     BrowserModule,

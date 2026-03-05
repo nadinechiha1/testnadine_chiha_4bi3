@@ -1,0 +1,88 @@
+/* Details Suggestion Component Styles */
+:host {
+  display: block;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button.update {
+  background: linear-gradient(135deg, #f39c12 0%, #d68910 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+button.update:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+}
+
+button.delete {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+button.delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+button.back {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+button.back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}

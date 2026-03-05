@@ -1,0 +1,115 @@
+/* List Suggestion Component Styles */
+:host {
+  display: block;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 0.85rem 2rem;
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+th {
+  padding: 1.2rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #f8f9ff;
+}
+
+td {
+  padding: 1.2rem 1rem;
+  color: #333;
+}
+
+button.details,
+button.update,
+button.delete {
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button.details {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+button.details:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+button.update {
+  background: linear-gradient(135deg, #f39c12 0%, #d68910 100%);
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+button.update:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+}
+
+button.delete {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+button.delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}

@@ -1,0 +1,8 @@
+<h2>Détails de l'atelier (Nadine)</h2>
+<div *ngIf="atelier">
+  <p><strong>Nom :</strong> {{ atelier.nom }}</p>
+  <p><strong>Email du formateur :</strong> {{ atelier.emailFormateur }}</p>
+  <p><strong>Nombre de participants :</strong> {{ atelier.nbrParticipant }}</p>
+  <p><strong>Statut :</strong> {{ atelier.statut ? 'Actif' : 'Inactif' }}</p>
+  <button (click)="back()">Retour</button>
+</div>
